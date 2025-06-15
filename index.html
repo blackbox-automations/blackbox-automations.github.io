@@ -3,121 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BlackBox - Business Automation Solutions Test</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #444;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header h2 {
-      font-weight: normal;
-      color: #aaa;
-      margin-top: 0.5rem;
-    }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    .service {
-      margin-bottom: 2rem;
-    }
-    .service h3 {
-      margin-bottom: 0.5rem;
-      color: #00ffcc;
-    }
-    .service ul {
-      margin-top: 0.5rem;
-      padding-left: 1.5rem;
-    }
-    .process-step {
-      margin-bottom: 1rem;
-    }
-    .cta {
-      background-color: #111;
-      padding: 2rem;
-      text-align: center;
-      border-top: 1px solid #444;
-    }
-    .cta a {
-      color: #00ffcc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <title>BlackBox | Business Automation Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-  <header>
-    <h1>BlackBox</h1>
-    <h2>Business Automation Solutions</h2>
-    <p>Contact: blackboxautomations@gmail.com</p>
+  <nav>
+    <div class="navbar">
+      <a href="index.html"><img src="logo.png" alt="BlackBox Logo"></a>
+      <div class="nav-links">
+        <a href="solutions.html">Solutions</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="menu-toggle" aria-label="Open Menu">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <button class="close-sidebar" aria-label="Close Menu">
+        <i class="bi bi-x"></i>
+      </button>
+      <a href="solutions.html">Solutions</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Optimizing workflows<br>through AI and automation</h1>
+    <p>We are an advanced automation consultancy that empowers lean teams by creating scalable systems for client onboarding, lead engagement, and content delivery.</p>
+    <div class="centered-button">
+      <a href="mailto:blackboxautomations@gmail.com">Book a Consult</a>
+    </div>
+    
+    <section class="clients">
+    <p>Our Clients</p>
+    <div class="logo-strip">
+      <a href="https://www.facebook.com/crypta.techadv" target="_blank"><img src="clients/crypta.png" alt="Crypta"></a>
+      <a href="https://www.facebook.com/people/Global-Pinoy-FX-Traders/61551704302838/" target="_blank"><img src="clients/global-pinoy-fx-traders.png" alt="Global Pinoy FX Traders"></a>
+    </div>
+  </section>
   </header>
 
-  <section>
-    <h2>Introduction</h2>
-    <p>We help small businesses eliminate time-consuming manual tasks and reclaim over 10 hours a week through intelligent automation systems. Our solutions are tailored to your workflow, saving you time, improving efficiency, and driving growth.</p>
-  </section>
+  <section class="info">
+    <h2>What We Do</h2>
+    <p>
+      We help small businesses eliminate time-consuming manual tasks and reclaim over 10 hours per week through intelligent automation. Our solutions are customized to fit your workflow—saving time, increasing efficiency, and driving sustainable growth.
+    </p>
 
-  <section>
     <h2>Core Services</h2>
-
-    <div class="service">
-      <h3>Client Onboarding Automation ($500 - $800)</h3>
-      <p>Streamlines the entire onboarding process from sale to service, ensuring no manual steps or missed details.</p>
-      <ul>
-        <li>80% reduction in onboarding time</li>
-        <li>Seamless client experience</li>
-        <li>Less admin burden for your team</li>
-      </ul>
-      <p><strong>Implementation timeframe:</strong> 1-2 weeks</p>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Client Onboarding Automation</h3>
+        <p>
+          Streamlines the entire onboarding process from sale to service, ensuring no manual steps or missed details.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Lead Follow-Up System</h3>
+        <p>
+          Automatically nurtures leads with personalized follow-ups to increase conversions without manual effort.
+        </p>
+      </div>
+      <div class="service-card">
+        <h3>Content Repurposing Workflow</h3>
+        <p>
+          Turns one piece of content into multiple formats for various platforms, maximizing content ROI.
+        </p>
+      </div>
     </div>
 
-    <div class="service">
-      <h3>Lead Follow-Up System ($500 - $1,000)</h3>
-      <p>Automatically nurtures leads with personalized follow-ups to increase conversions without manual effort.</p>
-      <ul>
-        <li>Improved lead engagement</li>
-        <li>Faster response times</li>
-        <li>Higher conversion rates</li>
-      </ul>
-      <p><strong>Implementation timeframe:</strong> 1-2 weeks</p>
-    </div>
-
-    <div class="service">
-      <h3>Content Repurposing Workflow ($500 - $800)</h3>
-      <p>Turns one piece of content into multiple formats for various platforms, maximizing content ROI.</p>
-      <ul>
-        <li>Save hours of manual work</li>
-        <li>Boost content reach and engagement</li>
-        <li>Stay consistent across platforms</li>
-      </ul>
-      <p><strong>Implementation timeframe:</strong> 1-2 weeks</p>
-    </div>
-  </section>
-
-  <section>
     <h2>Our 4-Step Process</h2>
-    <div class="process-step">1. Discovery Call</div>
-    <div class="process-step">2. Custom Solution Design</div>
-    <div class="process-step">3. Implementation</div>
-    <div class="process-step">4. Training & Support</div>
+    <div class="process-rectangles">
+      <div class="process-rect">
+        <span class="process-num">1</span>
+        <i class="bi bi-telephone-forward" aria-hidden="true"></i>
+        <span class="process-title">Discovery Call</span>
+      </div>
+      <div class="process-rect">
+        <span class="process-num">2</span>
+        <i class="bi bi-easel2" aria-hidden="true"></i>
+        <span class="process-title">Custom Solution Design</span>
+      </div>
+      <div class="process-rect">
+        <span class="process-num">3</span>
+        <i class="bi bi-gear" aria-hidden="true"></i>
+        <span class="process-title">Implementation</span>
+      </div>
+      <div class="process-rect">
+        <span class="process-num">4</span>
+        <i class="bi bi-people" aria-hidden="true"></i>
+        <span class="process-title">Training & Support</span>
+      </div>
+    </div>
   </section>
 
-  <div class="cta">
-    <h2>Book Your Free Discovery Call</h2>
-    <p><a href="mailto:blackboxautomations@gmail.com">Click here to schedule</a> your free 20-minute discovery call and find out how automation can save your business time and money.</p>
-  </div>
+  <footer>
+    <div>
+      <img src="logo.png" alt="BlackBox Logo" style="height: 70px;" />
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:blackboxautomations@gmail.com">blackboxautomations@gmail.com</a>
+      <a>+639453183638</a>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <a href="solutions.html">Client Onboarding</a>
+      <a href="solutions.html">Lead Follow-Up</a>
+      <a href="solutions.html">Content Repurposing</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <a href="case-studies.html">Case Studies</a>
+    </div>
+  </footer>
 </body>
+<script>
+  // Sidebar toggle logic
+  const menuToggle = document.querySelector('.menu-toggle');
+  const sidebar = document.getElementById('sidebar');
+  const closeSidebar = document.querySelector('.close-sidebar');
+
+  menuToggle.addEventListener('click', () => {
+    sidebar.classList.add('active');
+  });
+
+  closeSidebar.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+  });
+
+  // Optional: Close sidebar when clicking outside
+  window.addEventListener('click', (e) => {
+    if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
+      sidebar.classList.remove('active');
+    }
+  });
+</script>
 </html>

@@ -1,0 +1,246 @@
+/* =========================
+   Global Styles
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  color: #f5f5f5;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* =========================
+   Navigation Bar
+   ========================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+.navbar img {
+  height: 55px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+}
+.navbar a:hover,
+.navbar a:focus {
+  color: #e6d300;
+}
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 240px;
+  height: 100vh;
+  background: #181818;
+  box-shadow: -2px 0 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  z-index: 2000;
+  transition: right 0.3s;
+}
+.sidebar.active {
+  right: 0;
+}
+.sidebar .close-sidebar {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.sidebar a:hover,
+.sidebar a:focus {
+  color: #e6d300;
+}
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+/* Hide nav links on mobile, show hamburger */
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+/* Hide sidebar on desktop */
+@media (min-width: 801px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* =========================
+   Main Section
+   ========================= */
+.main-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+  margin-bottom: 1rem;
+  display: block;
+  margin-top: 0;
+}
+.green-star svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0.3rem;
+  vertical-align: middle;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section p {
+  font-size: 1.1rem;
+  color: #ccc;
+  text-align: justify;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.left p {
+  font-size: 0.9rem;
+  color: #939393;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.highlight {
+  color: rgb(191, 191, 191);
+  font-weight: 700;
+}
+section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 2.5rem;
+}
+section h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 2rem;
+}
+section h3 {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.two-column {
+  display: flex;
+  gap: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  margin-bottom: 3rem;
+}
+.two-column .column {
+  flex: 1;
+  min-width: 0;
+}
+.two-column .column:first-child {
+  flex: 1;
+}
+.two-column .column:last-child {
+  flex: 3;
+}
+@media (max-width: 900px) {
+  .two-column {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
+.centered-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.centered-button a {
+  background: #222;
+  color: white;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+.centered-button a:hover {
+  background: #e6d300;
+  color: #111;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+  color: #ccc;
+  padding: 2rem;
+}
+footer div {
+  flex: 1 1 200px;
+  margin-bottom: 1rem;
+}
+footer h4 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
