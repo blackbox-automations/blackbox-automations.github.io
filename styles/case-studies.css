@@ -7,7 +7,7 @@
   padding: 0;
 }
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #111;
   color: #f5f5f5;
   margin: 0;
@@ -58,7 +58,7 @@ nav {
   width: 240px;
   height: 100vh;
   background: #181818;
-  box-shadow: -2px 0 12px rgba(0,0,0,0.3);
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   padding: 2rem 1.5rem 1rem 1.5rem;
@@ -119,7 +119,7 @@ nav {
    ========================= */
 header {
   position: relative;
-  background-image: url('../background.jpg');
+  background-image: url("../background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.80);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 2;
   pointer-events: none;
   border-bottom: 1px solid #272727;
@@ -176,14 +176,6 @@ section {
   height: 200px;
   overflow: hidden;
 }
-.card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: filter 0.3s;
-  border: 1px solid #292929;
-}
 .card-read-time {
   position: absolute;
   top: 50%;
@@ -214,15 +206,15 @@ section {
 }
 .card-img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   border-radius: 0;
   margin-bottom: 1rem;
   display: block;
   margin-top: 0; /* Ensure no top margin */
 }
 .card h3 {
-margin-top: 1rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: #fff;
 }

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions | BlackBox</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles/faq.css" />
+    <link rel="icon" href="favicon.ico?" type="image/x-icon" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="index.html"><img src="logo.png" alt="BlackBox Logo" /></a>
+        <div class="nav-links">
+          <a href="solutions.html">Solutions</a>
+          <a href="case-studies.html">Case Studies</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQs</a>
+        </div>
+        <button class="menu-toggle" aria-label="Open Menu">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <div class="sidebar" id="sidebar">
+        <button class="close-sidebar" aria-label="Close Menu">
+          <i class="bi bi-x"></i>
+        </button>
+        <a href="solutions.html">Solutions</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQs</a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <section
+      id="faq"
+      style="
+        font-family: Inter, sans-serif;
+        padding: 3rem 1rem;
+        max-width: 1200px;
+        margin: auto;
+      "
+    >
+      <p class="intro" style="margin-bottom: 2rem">
+        <b>Got questions?</b> Here’s what clients usually ask before working
+        with us.
+      </p>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Why should we go with you?</h3>
+          <p>
+            We don’t just connect apps—we build systems that eliminate
+            bottlenecks, save hours weekly, and create consistent, scalable
+            workflows. You get results, not just tools.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How do you justify your price?</h3>
+          <p>
+            The system pays for itself fast. If you're wasting 5+ hours/week on
+            manual work, you're already losing more than what we charge. This is
+            an investment in long-term efficiency and growth.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are you replacing my employees?</h3>
+          <p>
+            No—we're removing the repetitive tasks so your team can focus on
+            high-value work. Think of it as hiring a digital assistant that
+            works 24/7 without burnout.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What tools do you use?</h3>
+          <p>
+            We primarily use Make (formerly Integromat), Google Workspace, AI,
+            and whatever tools you already rely on. We build around your
+            stack—not force you into ours.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if I’m not tech-savvy?</h3>
+          <p>
+            You don’t need to be. We build everything for you, test it
+            end-to-end, and hand over clear documentation so anyone can use
+            it—no tech background needed.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does it take to finish?</h3>
+          <p>
+            Most systems are fully built within 7–14 days, depending on
+            complexity. If you're responsive, it moves even faster.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if something breaks later on?</h3>
+          <p>
+            We offer optional support plans or a one-time post-launch check-in.
+            But everything is built to be stable, documented, and easy to
+            maintain.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I request changes later?</h3>
+          <p>
+            Absolutely. You’ll own the system, and we’re available for upgrades
+            anytime your process evolves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <img src="logo.png" alt="BlackBox Logo" style="height: 70px" />
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:blackboxautomations@gmail.com"
+          >blackboxautomations@gmail.com</a
+        >
+        <a>+639453183638</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="solutions.html">Client Onboarding</a>
+        <a href="solutions.html">Lead Follow-Up</a>
+        <a href="solutions.html">Content Repurposing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQs</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="case-studies.html">Case Studies</a>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Sidebar toggle logic
+    const menuToggle = document.querySelector(".menu-toggle");
+    const sidebar = document.getElementById("sidebar");
+    const closeSidebar = document.querySelector(".close-sidebar");
+
+    menuToggle.addEventListener("click", () => {
+      sidebar.classList.add("active");
+    });
+
+    closeSidebar.addEventListener("click", () => {
+      sidebar.classList.remove("active");
+    });
+
+    // Optional: Close sidebar when clicking outside
+    window.addEventListener("click", (e) => {
+      if (
+        sidebar.classList.contains("active") &&
+        !sidebar.contains(e.target) &&
+        !menuToggle.contains(e.target)
+      ) {
+        sidebar.classList.remove("active");
+      }
+    });
+  </script>
+</html>
